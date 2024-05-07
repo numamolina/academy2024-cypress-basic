@@ -1,6 +1,6 @@
 {
-  "name": "cypress-cucumber-boilerplate",
-  "version": "2.2.0",
+  "name": "probandcypres",
+  "version": "2.2.2",
   "description": "This project is meant to be a kind of template to start working with Cucumber and Cypress just cloning the project.",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "cy:open": "cypress open",
     "cy:spec": "cypress run --spec **/*.spec.js",
     "cy:reporter": "cypress run --reporter reporters/lippia-reporter/lippia-reporter.js",
-    "cy:local": "./node_modules/.bin/cypress run",
+    "cy:local": "cypress run",
     "cy:run": "cypress run --record --key CYPRESS_RECORD_KEY"
   },
   "keywords": [
@@ -30,12 +30,15 @@
     "@badeball/cypress-cucumber-preprocessor": "^18.0.6",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@shelex/cypress-allure-plugin": "^2.34.0",
-    "cypress": "^13.7.2",
+    "cypress": "^13.8.1",
     "esbuild": "^0.16.4",
     "multiple-cucumber-html-reporter": "^3.0.1"
   },
   "bugs": {
     "url": "https://github.com/JuanAndresTrejo/academy2024-cypress-basic/issues"
   },
-  "homepage": "https://github.com/JuanAndresTrejo/academy2024-cypress-basic#readme"
+  "homepage": "https://github.com/JuanAndresTrejo/academy2024-cypress-basic#readme",
+  "dependencies": {
+    "cypress-downloadfile": "^1.2.3"
+  }
 }
